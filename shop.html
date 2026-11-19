@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Collections & Fine Jewelry | KALLOL Haute Joaillerie</title>
+  <meta name="description" content="Discover Kallol's full inventory of handcrafted 18k gold rings, diamond necklaces, pearl drop earrings, and luxury bracelets.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+<body class="shop-page-body">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    Complimentary Insured Worldwide Shipping &bull; <span>Use code KALLOL10</span> &bull; <a href="checkout.html?buyNowId=kal-test&size=Universal&qty=1" style="color: #FFE8A3; text-decoration: underline; font-weight: 600; margin-left: 6px;">⚡ Test Real ₹1 Razorpay Live Order &rarr;</a>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        KALLOL
+        <span>Fine Jewelry</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search Trigger -->
+        <button class="icon-btn" id="open-search-btn" title="Search Inventory" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist Trigger -->
+        <button class="icon-btn" id="open-wishlist-btn" title="Saved Jewels" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlist-badge">0</span>
+        </button>
+
+        <!-- Cart Trigger -->
+        <button class="icon-btn" id="open-cart-btn" title="Shopping Bag" aria-label="Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Shop Header Banner -->
+  <div class="shop-hero-banner">
+    <div class="container text-center">
+      <span class="shop-subheading">Atelier Master Catalog</span>
+      <h1 class="shop-hero-title serif">The Jewelry Collection</h1>
+      <p class="shop-hero-desc">
+        Explore exquisite handcrafted creations cast in pure 18k solid gold and set with certified natural diamonds and vibrant gemstones.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Shop & Inventory Catalog Content -->
+  <main class="container" style="padding: 40px 24px 100px;">
+    <!-- Inventory Metrics Bar -->
+    <div class="inventory-stats-bar">
+      <div class="stat-box">
+        <div class="stat-num" id="total-skus">12</div>
+        <div class="stat-label">Active Pieces</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="total-units">84</div>
+        <div class="stat-label">Units Available</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="low-stock-count" style="color: #C0392B;">3</div>
+        <div class="stat-label">Low Stock Alerts</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" style="color: var(--accent-gold-dark);">100%</div>
+        <div class="stat-label">GIA / EGL Certified</div>
+      </div>
+    </div>
+
+    <!-- Filter & Sort Bar -->
+    <div class="inventory-controls">
+      <div class="category-pills" id="category-filter-pills">
+        <button class="cat-pill active" data-cat="all">All Jewels (12)</button>
+        <button class="cat-pill" data-cat="Rings">Rings (7)</button>
+        <button class="cat-pill" data-cat="Necklaces">Necklaces (2)</button>
+        <button class="cat-pill" data-cat="Earrings">Earrings (2)</button>
+        <button class="cat-pill" data-cat="Bracelets">Bracelets (1)</button>
+      </div>
+
+      <div class="filter-sort-controls">
+        <select id="metal-filter" class="filter-select">
+          <option value="all">All Metals</option>
+          <option value="Rose Gold">18k Rose Gold</option>
+          <option value="Yellow Gold">18k Yellow Gold</option>
+          <option value="White Gold">18k White Gold</option>
+        </select>
+
+        <select id="sort-select" class="filter-select">
+          <option value="featured">Sort: Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="stock">Stock Available</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="products-grid" id="inventory-grid">
+      <!-- Populated via app.js -->
+    </div>
+  </main>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="drawer-overlay" id="cart-drawer-overlay">
+    <div class="drawer-panel" id="cart-drawer">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Shopping Bag (<span id="cart-drawer-count">0</span>)</h3>
+        <button class="drawer-close" id="close-cart-btn" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="cart-items-container">
+        <!-- Cart Items -->
+      </div>
+
+      <div class="drawer-footer" id="cart-drawer-footer">
+        <div class="coupon-row">
+          <input type="text" id="coupon-input" class="coupon-input" placeholder="Promo code (e.g. KALLOL10)">
+          <button class="coupon-btn" id="apply-coupon-btn">Apply</button>
+        </div>
+
+        <div class="drawer-subtotal-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="drawer-subtotal-row" id="discount-row" style="display: none; color: #27AE60;">
+          <span>Special Offer (10% Off)</span>
+          <span id="cart-discount">-$0.00</span>
+        </div>
+        <div class="drawer-subtotal-row">
+          <span>Insured Shipping</span>
+          <span style="color: var(--accent-gold-dark); font-weight: 600;">Complimentary</span>
+        </div>
+        <div class="drawer-subtotal-row total">
+          <span>Estimated Total</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+
+        <button class="checkout-btn" id="checkout-trigger-btn">Proceed to Secure Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-out Wishlist Drawer -->
+  <div class="drawer-overlay" id="wishlist-drawer-overlay">
+    <div class="drawer-panel" id="wishlist-drawer">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Wishlist (<span id="wishlist-drawer-count">0</span>)</h3>
+        <button class="drawer-close" id="close-wishlist-btn" aria-label="Close Wishlist">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="wishlist-items-container">
+        <!-- Wishlist Items -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div style="display: flex; justify-content: flex-end;">
+      <button class="icon-btn" id="close-search-btn" style="font-size: 1.8rem;">&times;</button>
+    </div>
+    <div class="search-inner">
+      <div class="search-input-wrap">
+        <input type="text" id="live-search-input" placeholder="Search rings, necklaces, 18k gold..." autofocus>
+      </div>
+      <div class="search-results-grid" id="search-results-box">
+        <!-- Live search matches -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="serif">KALLOL</h3>
+          <p>Handcrafted fine jewelry crafted for everyday elegance and milestone memories.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="news.html">News & Journal</a></li>
+            <li><a href="contact.html">Contact & Salons</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="index.html#specifications">Certifications & Specs</a></li>
+            <li><a href="contact.html">Complimentary Resizing</a></li>
+            <li><a href="contact.html">Insured Global Courier</a></li>
+            <li><a href="checkout.html">Shopping Checkout</a></li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter-box">
+          <h4>Private Atelier Circle</h4>
+          <p>Subscribe for exclusive preview invitations and novel releases.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 KALLOL Haute Joaillerie. All rights reserved.</div>
+        <div>New York &bull; Paris &bull; Geneva &bull; London</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

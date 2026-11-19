@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KALLOL | Haute Joaillerie & Fine Jewelry</title>
+  <meta name="description" content="Elevate the everyday with timeless jewels by Kallol. Explore handcrafted 18k gold rings, necklaces, earrings, and diamonds.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    Complimentary Insured Worldwide Shipping &bull; <span>Use code KALLOL10</span> &bull; <a href="checkout.html?buyNowId=kal-test&size=Universal&qty=1" style="color: #FFE8A3; text-decoration: underline; font-weight: 600; margin-left: 6px;">⚡ Test Real ₹1 Razorpay Live Order &rarr;</a>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        KALLOL
+        <span>Fine Jewelry</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Search, Wishlist, Cart) -->
+      <div class="nav-actions">
+        <!-- Search Trigger -->
+        <button class="icon-btn" id="open-search-btn" title="Search Inventory" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist Trigger -->
+        <button class="icon-btn" id="open-wishlist-btn" title="Saved Jewels" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlist-badge">1</span>
+        </button>
+
+        <!-- Cart Trigger -->
+        <button class="icon-btn" id="open-cart-btn" title="Shopping Bag" aria-label="Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cart-badge">0</span>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button class="icon-btn mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       HERO SECTION - Strictly modeled after template
+       ======================================================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Thumbnail Column -->
+        <div class="hero-thumb-col">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" 
+               alt="Kallol Layered Gold Necklaces" 
+               loading="lazy">
+        </div>
+
+        <!-- Center Typography & Call to Action -->
+        <div class="hero-content">
+          <h1 class="hero-title serif">
+            Elevate The Everyday With Timeless Jewels
+          </h1>
+          <a href="#shop" class="hero-btn">SHOP NOW</a>
+        </div>
+
+        <!-- Right Model Photography Column -->
+        <div class="hero-model-col">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=80" 
+               alt="Kallol Luxury Statement Rings on Model" 
+               loading="lazy">
+          <div class="hero-floating-badge">
+            18k Solid Gold &bull; Handcrafted
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       BEST SELLING SECTION - Strictly modeled after template
+       ======================================================== -->
+  <section class="products-section" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title serif">Best Selling</h2>
+        <a href="#inventory-hub" class="view-all-link">Shop all &rarr;</a>
+      </div>
+
+      <!-- 6 Grid Product Cards -->
+      <div class="products-grid" id="best-selling-grid">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       EDITORIAL SPOTLIGHT SECTION ("Necklace" - Template Top Right)
+       ======================================================== -->
+  <section class="editorial-showcase-section" id="necklace-showcase">
+    <div class="container">
+      <div class="showcase-grid">
+        <!-- Left Editorial Copy & Featured Card -->
+        <div class="necklace-content-col">
+          <h2 class="necklace-category-heading serif">Necklace</h2>
+          <p class="necklace-editorial-p">
+            Explore our new arrival jewelry collection: elegant necklaces, classic hoops, vibrant gemstone rings, pearl drop earrings, and chic charm bracelets. Perfect for everyday elegance!
+          </p>
+          <a href="#inventory-hub" class="shop-all-arrow-btn">
+            SHOP ALL &rarr;
+          </a>
+
+          <!-- Featured Mini Card (Twilight Serenity Ring) -->
+          <div class="spotlight-mini-card" onclick="window.location.href='product.html?id=kal-007'" style="cursor: pointer;">
+            <div class="spotlight-mini-thumb" id="spotlight-thumb-wrap">
+              <!-- SVG / Image inserted here -->
+            </div>
+            <div class="spotlight-mini-details">
+              <h4 class="spotlight-mini-title">Twilight Serenity Ring</h4>
+              <p class="spotlight-mini-by">by Lumi&egrave;re Jewelry</p>
+              <div class="spotlight-mini-price">$299.99</div>
+            </div>
+            <button class="spotlight-wishlist wishlist-toggle" data-id="kal-007" title="Add to Wishlist" onclick="event.stopPropagation();">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Large Editorial Image -->
+        <div class="necklace-image-col">
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" 
+               alt="Kallol Diamond Necklace & Statement Ring Elegance" 
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SPECIFICATIONS ACCORDION SECTION (Template Bottom Right)
+       ======================================================== -->
+  <section class="specifications-section" id="specifications">
+    <div class="container">
+      <h2 class="spec-title-center serif">Specifications</h2>
+
+      <div class="accordion-container">
+        <!-- 01 Certifications -->
+        <div class="accordion-item" data-accordion="1">
+          <button class="accordion-header">
+            <div class="accordion-num-title">
+              <span class="acc-num">01</span>
+              <span class="acc-title">Certifications</span>
+            </div>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="simple-accordion-content">
+              Each Kallol fine jewelry creation comes with an internationally verified Certificate of Authenticity. Our diamonds and gemstones are certified by the Gemological Institute of America (GIA), International Gemological Institute (IGI), or European Gemological Laboratory (EGL), guaranteeing conflict-free origin, certified 4Cs metrics, and pure 18k solid gold assays.
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 Product Description (EXPANDED BY DEFAULT AS IN TEMPLATE) -->
+        <div class="accordion-item active" data-accordion="2">
+          <button class="accordion-header">
+            <div class="accordion-num-title">
+              <span class="acc-num">02</span>
+              <span class="acc-title">Product Description</span>
+            </div>
+            <span class="acc-icon">&minus;</span>
+          </button>
+          <div class="accordion-body">
+            <div class="specs-expanded-layout">
+              <!-- Left Ring Preview -->
+              <div class="specs-preview-col" id="spec-product-img-box" onclick="window.location.href='product.html?id=kal-004'" style="cursor: pointer;" title="Click to View Full Specifications">
+                <!-- SVG / Image inserted by app.js -->
+              </div>
+              <!-- Right Detailed Specs Table -->
+              <div class="specs-table-col">
+                <table class="specs-table">
+                  <tbody>
+                    <tr>
+                      <td class="spec-key">Metal Type:</td>
+                      <td class="spec-val">18k Rose Gold</td>
+                    </tr>
+                    <tr>
+                      <td class="spec-key">Gemstones</td>
+                      <td class="spec-val">Diamonds, 0.5 carats</td>
+                    </tr>
+                    <tr>
+                      <td class="spec-key">Ring Size</td>
+                      <td class="spec-val">Adjustable (Available any sizes)</td>
+                    </tr>
+                    <tr>
+                      <td class="spec-key">Design</td>
+                      <td class="spec-val">Intricate floral pattern with pave-set stones</td>
+                    </tr>
+                    <tr>
+                      <td class="spec-key">Finish</td>
+                      <td class="spec-val">High-polish with textured details</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Features -->
+        <div class="accordion-item" data-accordion="3">
+          <button class="accordion-header">
+            <div class="accordion-num-title">
+              <span class="acc-num">03</span>
+              <span class="acc-title">Features</span>
+            </div>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="simple-accordion-content">
+              &bull; Ergonomically curved comfort-fit inner shank designed for continuous everyday wear.<br>
+              &bull; Four-prong micro-pave crown providing maximum light refraction and diamond brilliance.<br>
+              &bull; Hypoallergenic, nickel-free 18k gold formulation safe for sensitive skin.<br>
+              &bull; Hand-set by master goldsmiths with over 20 years of bespoke atelier experience.
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 Accessories -->
+        <div class="accordion-item" data-accordion="4">
+          <button class="accordion-header">
+            <div class="accordion-num-title">
+              <span class="acc-num">04</span>
+              <span class="acc-title">Accessories</span>
+            </div>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="simple-accordion-content">
+              Includes an ultra-fine microfiber jewelry polishing cloth, a precision ring sizer tool, a protective velvet travel pouch, and an embossed authenticity registry card with QR verification.
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 Bowl / Packaging -->
+        <div class="accordion-item" data-accordion="5">
+          <button class="accordion-header">
+            <div class="accordion-num-title">
+              <span class="acc-num">05</span>
+              <span class="acc-title">Bowl / Packaging</span>
+            </div>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="simple-accordion-content">
+              Packaged in Kallol's signature emerald & gold lacquered jewel box, nestled in bespoke crushed cream velvet. Includes luxury wax-sealed ribbon gifting packaging suitable for proposals and milestone anniversaries.
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 Dimensions -->
+        <div class="accordion-item" data-accordion="6">
+          <button class="accordion-header">
+            <div class="accordion-num-title">
+              <span class="acc-num">06</span>
+              <span class="acc-title">Dimensions</span>
+            </div>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="simple-accordion-content">
+              Crown Width: 14mm &bull; Band Taper: 2.5mm to 1.8mm &bull; Weight: 4.8 grams &bull; Center Stone Height: 4.2mm.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       LIVE INVENTORY HUB & FULL CATALOG
+       ======================================================== -->
+  <section class="inventory-hub-section" id="inventory-hub">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title serif">Kallol Inventory & Catalog</h2>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">
+            Real-time atelier stock management, specifications, and instant ordering.
+          </p>
+        </div>
+      </div>
+
+      <!-- Inventory Metrics Bar -->
+      <div class="inventory-stats-bar">
+        <div class="stat-box">
+          <div class="stat-num" id="total-skus">12</div>
+          <div class="stat-label">Active SKUs</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num" id="total-units">84</div>
+          <div class="stat-label">Available Units</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num" id="low-stock-count" style="color: #C0392B;">3</div>
+          <div class="stat-label">Low Stock Alerts</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num" style="color: var(--accent-gold-dark);">100%</div>
+          <div class="stat-label">Certified Natural</div>
+        </div>
+      </div>
+
+      <!-- Inventory Filter & Sort Controls -->
+      <div class="inventory-controls">
+        <div class="category-pills" id="category-filter-pills">
+          <button class="cat-pill active" data-cat="all">All Jewels (12)</button>
+          <button class="cat-pill" data-cat="Rings">Rings (7)</button>
+          <button class="cat-pill" data-cat="Necklaces">Necklaces (2)</button>
+          <button class="cat-pill" data-cat="Earrings">Earrings (2)</button>
+          <button class="cat-pill" data-cat="Bracelets">Bracelets (1)</button>
+        </div>
+
+        <div class="filter-sort-controls">
+          <select id="metal-filter" class="filter-select">
+            <option value="all">All Metals</option>
+            <option value="Rose Gold">Rose Gold</option>
+            <option value="Yellow Gold">Yellow Gold</option>
+            <option value="White Gold">White Gold</option>
+          </select>
+
+          <select id="sort-select" class="filter-select">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="stock">Stock Available</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Inventory Grid -->
+      <div class="products-grid" id="inventory-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SLIDE-OUT SHOPPING BAG (CART) DRAWER
+       ======================================================== -->
+  <div class="drawer-overlay" id="cart-drawer-overlay">
+    <div class="drawer-panel" id="cart-drawer">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Shopping Bag (<span id="cart-drawer-count">0</span>)</h3>
+        <button class="drawer-close" id="close-cart-btn" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="cart-items-container">
+        <!-- Populated via JS -->
+      </div>
+
+      <div class="drawer-footer" id="cart-drawer-footer">
+        <!-- Coupon input -->
+        <div class="coupon-row">
+          <input type="text" id="coupon-input" class="coupon-input" placeholder="Promo code (e.g. KALLOL10)">
+          <button class="coupon-btn" id="apply-coupon-btn">Apply</button>
+        </div>
+
+        <div class="drawer-subtotal-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="drawer-subtotal-row" id="discount-row" style="display: none; color: #27AE60;">
+          <span>Special Offer (10% Off)</span>
+          <span id="cart-discount">-$0.00</span>
+        </div>
+        <div class="drawer-subtotal-row">
+          <span>Insured Express Shipping</span>
+          <span style="color: var(--accent-gold-dark); font-weight: 600;">Complimentary</span>
+        </div>
+        <div class="drawer-subtotal-row total">
+          <span>Estimated Total</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+
+        <button class="checkout-btn" id="checkout-trigger-btn">Proceed to Secure Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       SLIDE-OUT WISHLIST DRAWER
+       ======================================================== -->
+  <div class="drawer-overlay" id="wishlist-drawer-overlay">
+    <div class="drawer-panel" id="wishlist-drawer">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Wishlist (<span id="wishlist-drawer-count">0</span>)</h3>
+        <button class="drawer-close" id="close-wishlist-btn" aria-label="Close Wishlist">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="wishlist-items-container">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PRODUCT DETAIL / QUICK VIEW MODAL
+       ======================================================== -->
+  <div class="modal-overlay" id="product-modal-overlay">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="close-product-modal" aria-label="Close Modal">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-gallery" id="modal-gallery-box">
+          <!-- Image/SVG rendered -->
+        </div>
+        <div class="modal-content">
+          <div class="modal-vendor" id="modal-vendor">by Lusture & Co</div>
+          <h2 class="modal-title serif" id="modal-title">Eternal Embrace Ring</h2>
+          <div class="modal-rating-row">
+            <span id="modal-rating">&starf; 4.9 (2,345 reviews)</span> &bull; 
+            <span id="modal-stock-status" class="stock-tag">In Stock (8 available)</span>
+          </div>
+          <div class="modal-price" id="modal-price">$330.00</div>
+          <p class="modal-desc" id="modal-desc">
+            A delicate 18k rose gold band with a brilliant marquise diamond solitaire embracing timeless beauty.
+          </p>
+
+          <span class="modal-option-label">Select Ring Size:</span>
+          <div class="size-selector" id="modal-size-selector">
+            <button class="size-pill active">US 5</button>
+            <button class="size-pill">US 6</button>
+            <button class="size-pill">US 7</button>
+            <button class="size-pill">US 8</button>
+            <button class="size-pill">Adjustable</button>
+          </div>
+
+          <div class="modal-btn-row">
+            <button class="quick-btn" id="modal-add-cart-btn" style="padding: 16px;">
+              Add To Shopping Bag
+            </button>
+            <button class="quick-btn secondary" id="modal-wishlist-toggle" style="flex: 0 0 54px; padding: 16px;">
+              &hearts;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       LIVE SEARCH MODAL
+       ======================================================== -->
+  <div class="search-modal" id="search-modal">
+    <div style="display: flex; justify-content: flex-end;">
+      <button class="icon-btn" id="close-search-btn" style="font-size: 1.8rem;">&times;</button>
+    </div>
+    <div class="search-inner">
+      <div class="search-input-wrap">
+        <input type="text" id="live-search-input" placeholder="Search rings, necklaces, 18k gold..." autofocus>
+      </div>
+      <div class="search-results-grid" id="search-results-box">
+        <!-- Live search matches -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       CHECKOUT & ORDER CONFIRMATION MODAL
+       ======================================================== -->
+  <div class="modal-overlay" id="checkout-modal-overlay">
+    <div class="modal-dialog" style="max-width: 620px; padding: 36px;">
+      <button class="modal-close-btn" id="close-checkout-modal">&times;</button>
+      <div id="checkout-form-content">
+        <h3 class="serif" style="font-size: 1.8rem; margin-bottom: 8px;">Order Details & Shipping</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 24px;">
+          Complimentary insured courier delivery with Kallol signature wax seal gift packaging.
+        </p>
+
+        <form id="order-submit-form" onsubmit="return false;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+            <input type="text" required placeholder="First Name" class="coupon-input" style="text-transform: none;">
+            <input type="text" required placeholder="Last Name" class="coupon-input" style="text-transform: none;">
+          </div>
+          <div style="margin-bottom: 12px;">
+            <input type="email" required placeholder="Email Address for GIA Certificate" class="coupon-input" style="text-transform: none;">
+          </div>
+          <div style="margin-bottom: 12px;">
+            <input type="text" required placeholder="Delivery Street Address" class="coupon-input" style="text-transform: none;">
+          </div>
+          <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; margin-bottom: 24px;">
+            <input type="text" required placeholder="City" class="coupon-input" style="text-transform: none;">
+            <input type="text" required placeholder="State / Province" class="coupon-input" style="text-transform: none;">
+            <input type="text" required placeholder="Postal Code" class="coupon-input" style="text-transform: none;">
+          </div>
+
+          <div style="padding: 16px; background-color: #FAF9F7; border: 1px solid var(--border-light); border-radius: 4px; margin-bottom: 24px;">
+            <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 6px;">Payment Method</div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary);">
+              &bull; Secure Encrypted Checkout (Visa, Mastercard, Amex, Apple Pay)
+            </div>
+          </div>
+
+          <button class="checkout-btn" id="confirm-order-btn">Complete Insured Order</button>
+        </form>
+      </div>
+
+      <!-- Receipt Success View (Hidden by default) -->
+      <div id="checkout-success-content" style="display: none; text-align: center; padding: 20px 0;">
+        <div style="width: 60px; height: 60px; background-color: #27AE60; color: #FFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+          &#10003;
+        </div>
+        <h3 class="serif" style="font-size: 2rem; margin-bottom: 8px;">Order Confirmed</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;" id="order-confirm-ref">
+          Thank you for choosing Kallol Haute Joaillerie. Your reference is #KL-94281.
+        </p>
+        <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; max-width: 440px; margin: 0 auto 24px;">
+          An insured courier parcel with tracking number and signed GIA laboratory certification will be dispatched within 24 hours.
+        </p>
+        <button class="hero-btn" id="finish-checkout-btn">Return to Catalog</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="serif">KALLOL</h3>
+          <p>
+            Fine jewelry crafted for everyday elegance and milestone memories. Every piece is sculpted in ethical 18k gold and adorned with natural, conflict-free diamonds.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#shop">Best Selling Rings</a></li>
+            <li><a href="#necklace-showcase">Diamond Necklaces</a></li>
+            <li><a href="#inventory-hub">Akoya Pearl Drops</a></li>
+            <li><a href="#inventory-hub">Tennis Bracelets</a></li>
+            <li><a href="#inventory-hub">High Jewelry</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="#specifications">Certifications & Specs</a></li>
+            <li><a href="#contact">Complimentary Resizing</a></li>
+            <li><a href="#contact">Insured Global Shipping</a></li>
+            <li><a href="#contact">Lifetime Warranty</a></li>
+            <li><a href="#contact">Atelier Appointments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col newsletter-box">
+          <h4>Private Atelier Circle</h4>
+          <p>Subscribe for exclusive preview invitations, private showroom salons, and novel releases.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 KALLOL Haute Joaillerie. All rights reserved.</div>
+        <div>New York &bull; Paris &bull; Geneva &bull; London</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core App Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>

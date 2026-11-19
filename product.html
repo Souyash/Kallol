@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Quick View & Details | KALLOL Haute Joaillerie</title>
+  <meta name="description" content="Explore handcrafted fine jewelry specifications, natural gemstone certifications, and atelier details at Kallol.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+<body class="product-page-body">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    Complimentary Insured Worldwide Shipping &bull; <span>Use code KALLOL10</span> &bull; <a href="checkout.html?buyNowId=kal-test&size=Universal&qty=1" style="color: #FFE8A3; text-decoration: underline; font-weight: 600; margin-left: 6px;">⚡ Test Real ₹1 Razorpay Live Order &rarr;</a>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        KALLOL
+        <span>Fine Jewelry</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Wishlist Link -->
+        <a href="index.html#wishlist" class="icon-btn" id="header-wishlist-link" title="Saved Jewels">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlist-badge">0</span>
+        </a>
+
+        <!-- Cart Link -->
+        <a href="checkout.html" class="icon-btn" title="Checkout / Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="container" style="padding-top: 24px;">
+    <div class="breadcrumb-trail">
+      <a href="index.html">Home</a> &rsaquo; 
+      <a href="index.html#shop" id="crumb-category">Rings</a> &rsaquo; 
+      <span id="crumb-name">Eternal Embrace Ring</span>
+    </div>
+  </div>
+
+  <!-- Main Product Quick View Layout -->
+  <main class="container" style="padding: 24px 24px 80px;">
+    <div class="product-view-layout">
+      <!-- Left Column: Media Gallery -->
+      <div class="product-gallery-column">
+        <div class="main-image-viewport" id="product-main-view">
+          <!-- Main visual rendered by JS -->
+        </div>
+
+        <div class="thumbnail-strip" id="product-thumbs-strip">
+          <!-- Thumbnails rendered by JS -->
+        </div>
+
+        <!-- Trust Badges Under Image -->
+        <div class="gallery-trust-bar">
+          <div class="trust-pill">
+            <span class="trust-icon">&#10003;</span>
+            <span>100% GIA / EGL Certified</span>
+          </div>
+          <div class="trust-pill">
+            <span class="trust-icon">&#10003;</span>
+            <span>Complimentary 30-Day Resizing</span>
+          </div>
+          <div class="trust-pill">
+            <span class="trust-icon">&#10003;</span>
+            <span>Conflict-Free Diamonds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Product Info & Actions -->
+      <div class="product-details-column">
+        <div class="product-meta-header">
+          <span class="product-brand-tag" id="detail-brand">by Lusture & Co</span>
+          <span class="product-sku-tag" id="detail-sku">SKU: KL-RNG-01</span>
+        </div>
+
+        <h1 class="product-hero-title serif" id="detail-title">Eternal Embrace Ring</h1>
+
+        <div class="product-ratings-summary">
+          <div class="stars-row" id="detail-stars">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+          </div>
+          <span class="rating-text" id="detail-rating-text">4.9 (2,345 reviews)</span>
+          <span class="bullet-separator">&bull;</span>
+          <span class="stock-status-pill in-stock" id="detail-stock-pill">In Stock (8 Available)</span>
+        </div>
+
+        <div class="price-showcase">
+          <span class="current-price" id="detail-price">$330.00</span>
+          <span class="tax-note">Taxes included &bull; Insured shipping calculated at checkout</span>
+        </div>
+
+        <p class="product-summary-p" id="detail-desc">
+          A delicate 18k rose gold band with a brilliant marquise diamond solitaire embracing timeless beauty and everyday luxury.
+        </p>
+
+        <hr class="detail-divider">
+
+        <!-- Selectable Metal Variant -->
+        <div class="variant-group">
+          <div class="variant-label-row">
+            <span class="variant-label">Metal / Material:</span>
+            <span class="variant-selected-value" id="selected-metal-name">18k Rose Gold</span>
+          </div>
+          <div class="metal-swatches" id="metal-swatches">
+            <button class="metal-swatch-btn active" data-metal="18k Rose Gold" title="18k Rose Gold">
+              <span class="swatch-color" style="background: linear-gradient(135deg, #f7d0ba, #bf7e67);"></span>
+              <span>Rose Gold</span>
+            </button>
+            <button class="metal-swatch-btn" data-metal="18k Yellow Gold" title="18k Yellow Gold">
+              <span class="swatch-color" style="background: linear-gradient(135deg, #ffe8a3, #aa822a);"></span>
+              <span>Yellow Gold</span>
+            </button>
+            <button class="metal-swatch-btn" data-metal="18k White Gold" title="18k White Gold">
+              <span class="swatch-color" style="background: linear-gradient(135deg, #ffffff, #9aa6b2);"></span>
+              <span>White Gold</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Selectable Ring Size -->
+        <div class="variant-group" id="size-selector-group">
+          <div class="variant-label-row">
+            <span class="variant-label">Ring Size (US):</span>
+            <a href="#specifications-card" class="size-guide-link">Size Guide &bull; Free Resizing</a>
+          </div>
+          <div class="size-options-grid" id="size-options-grid">
+            <button class="size-choice-btn active" data-size="US 5">US 5</button>
+            <button class="size-choice-btn" data-size="US 6">US 6</button>
+            <button class="size-choice-btn" data-size="US 7">US 7</button>
+            <button class="size-choice-btn" data-size="US 8">US 8</button>
+            <button class="size-choice-btn" data-size="US 9">US 9</button>
+            <button class="size-choice-btn" data-size="Adjustable">Adjustable</button>
+          </div>
+        </div>
+
+        <!-- Quantity & Direct Purchase Buttons -->
+        <div class="action-buttons-wrap">
+          <div class="quantity-input-box">
+            <button class="qty-btn" id="detail-qty-minus">&minus;</button>
+            <span class="qty-number" id="detail-qty-val">1</span>
+            <button class="qty-btn" id="detail-qty-plus">&#43;</button>
+          </div>
+
+          <button class="hero-btn add-to-bag-cta" id="detail-add-bag-btn">
+            Add to Shopping Bag
+          </button>
+
+          <button class="wishlist-btn-large" id="detail-wishlist-toggle" title="Save to Wishlist">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Buy Now Direct Checkout Button -->
+        <button class="buy-now-cta" id="detail-buy-now-btn">
+          Instant Checkout &bull; Insured Delivery &rarr;
+        </button>
+
+        <!-- Technical Specifications Table (Directly matching template) -->
+        <div class="specs-card" id="specifications-card">
+          <h3 class="specs-card-title serif">Specifications</h3>
+          <table class="specs-table">
+            <tbody id="specs-table-body">
+              <tr>
+                <td class="spec-key">Metal Type:</td>
+                <td class="spec-val" id="spec-metal">18k Rose Gold</td>
+              </tr>
+              <tr>
+                <td class="spec-key">Gemstones:</td>
+                <td class="spec-val" id="spec-gems">Marquise Diamond, 0.45 carats</td>
+              </tr>
+              <tr>
+                <td class="spec-key">Ring Size:</td>
+                <td class="spec-val" id="spec-size">Adjustable (US 5 - 9)</td>
+              </tr>
+              <tr>
+                <td class="spec-key">Design:</td>
+                <td class="spec-val" id="spec-design">Slender crossover band with four-prong setting</td>
+              </tr>
+              <tr>
+                <td class="spec-key">Finish:</td>
+                <td class="spec-val" id="spec-finish">High-polish mirror finish</td>
+              </tr>
+              <tr>
+                <td class="spec-key">Dimensions:</td>
+                <td class="spec-val" id="spec-dimensions">Band width: 1.8mm, Crown height: 4.5mm</td>
+              </tr>
+              <tr>
+                <td class="spec-key">Certifications:</td>
+                <td class="spec-val" id="spec-cert">GIA Certified Natural Diamond</td>
+              </tr>
+              <tr>
+                <td class="spec-key">Packaging:</td>
+                <td class="spec-val" id="spec-packaging">Kallol Signature Velvet Gift Box</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Recommendations Section -->
+    <section class="related-recommendations-section" style="margin-top: 80px;">
+      <div class="section-header">
+        <h2 class="section-title serif">You May Also Admire</h2>
+        <a href="index.html#shop" class="view-all-link">Browse All Pieces &rarr;</a>
+      </div>
+      <div class="products-grid" id="related-products-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="serif">KALLOL</h3>
+          <p>Handcrafted 18k fine jewelry crafted for everyday elegance and milestone memories.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="index.html#specifications">Certifications & Guarantees</a></li>
+            <li><a href="index.html#contact">Complimentary Resizing</a></li>
+            <li><a href="index.html#contact">Insured Global Courier</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Navigation</h4>
+          <ul>
+            <li><a href="index.html">Main Catalog</a></li>
+            <li><a href="checkout.html">Shopping Checkout</a></li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter-box">
+          <h4>Atelier Enquiries</h4>
+          <p>Visit our private showroom salons in New York, Paris, and London.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 KALLOL Haute Joaillerie. All rights reserved.</div>
+        <div>Complimentary Insured Courier &bull; GIA Certified</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/product-page.js"></script>
+</body>
+</html>

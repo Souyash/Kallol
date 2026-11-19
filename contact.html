@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Private Appointments | KALLOL Haute Joaillerie</title>
+  <meta name="description" content="Schedule a private atelier appointment, bespoke commission inquiry, or contact the Kallol client concierge.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+<body class="contact-page-body">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    Complimentary Insured Worldwide Shipping & Signature Packaging &bull; <span>Use code KALLOL10 for 10% Off</span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        KALLOL
+        <span>Fine Jewelry</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Wishlist -->
+        <a href="index.html#wishlist" class="icon-btn" id="open-wishlist-btn" title="Saved Jewels">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlist-badge">0</span>
+        </a>
+
+        <!-- Cart -->
+        <a href="checkout.html" class="icon-btn" title="Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Editorial Header -->
+  <div class="shop-hero-banner">
+    <div class="container text-center">
+      <span class="shop-subheading">Atelier Concierge</span>
+      <h1 class="shop-hero-title serif">Private Appointments & Inquiries</h1>
+      <p class="shop-hero-desc">
+        Our dedicated master gemologists and stylists are at your disposal for private viewings, bespoke commissions, and ring sizing consultations.
+      </p>
+    </div>
+  </div>
+
+  <main class="container" style="padding: 40px 24px 100px;">
+    <div class="checkout-grid" style="align-items: flex-start;">
+      <!-- Left: Appointment & Commission Form -->
+      <div class="checkout-card" style="padding: 40px;">
+        <h2 class="serif" style="font-size: 1.8rem; margin-bottom: 8px;">Schedule a Salon Viewing</h2>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 28px;">
+          Available in-person at our Madison Avenue, Vend&ocirc;me, or London showrooms, or via private 1-on-1 virtual video salon.
+        </p>
+
+        <form id="contact-inquiry-form" onsubmit="event.preventDefault(); window.showToast('Thank you! Our concierge will confirm your appointment within 4 hours.'); this.reset();">
+          <div class="form-row two-col">
+            <div class="form-field">
+              <label>Your Name *</label>
+              <input type="text" required placeholder="Eleanor Vance" class="luxury-input">
+            </div>
+            <div class="form-field">
+              <label>Email Address *</label>
+              <input type="email" required placeholder="name@domain.com" class="luxury-input">
+            </div>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-field">
+              <label>Phone Number *</label>
+              <input type="tel" required placeholder="+1 (555) 000-0000" class="luxury-input">
+            </div>
+            <div class="form-field">
+              <label>Showroom Salon</label>
+              <select class="luxury-select">
+                <option>New York (740 Madison Avenue)</option>
+                <option>Paris (18 Place Vendôme)</option>
+                <option>Geneva (32 Rue du Rhône)</option>
+                <option>London (45 New Bond Street)</option>
+                <option>Virtual Private Video Salon</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-field">
+              <label>Inquiry Type</label>
+              <select class="luxury-select">
+                <option>Private Showroom Viewing</option>
+                <option>Custom Bespoke Ring Commission</option>
+                <option>Engagement / Bridal Consultation</option>
+                <option>Complimentary Sizing & Care Service</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Preferred Date</label>
+              <input type="date" class="luxury-input">
+            </div>
+          </div>
+
+          <div class="form-field full-width" style="margin-bottom: 24px;">
+            <label>Specific Jewels of Interest or Questions</label>
+            <textarea rows="4" placeholder="Tell us if there are specific pieces you would like prepared for your viewing (e.g. Eternal Embrace Ring, 18k Rose Gold)..." class="luxury-textarea"></textarea>
+          </div>
+
+          <button type="submit" class="place-order-btn">
+            Request Atelier Appointment &rarr;
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: Direct Concierge & Showroom Details -->
+      <div>
+        <div class="summary-sticky-card">
+          <h3 class="serif" style="font-size: 1.4rem; margin-bottom: 16px;">Direct Atelier Concierge</h3>
+          
+          <div style="margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--border-light);">
+            <div style="font-size: 0.74rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-bottom: 4px;">Telephone</div>
+            <div style="font-size: 1.1rem; font-weight: 600;">+1 (212) 555-8392</div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 2px;">Monday – Saturday: 10:00 AM – 7:00 PM EST</div>
+          </div>
+
+          <div style="margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--border-light);">
+            <div style="font-size: 0.74rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-bottom: 4px;">Electronic Mail</div>
+            <div style="font-size: 0.95rem; font-weight: 600;">concierge@kallol-jewels.com</div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 2px;">Average response time: Under 2 hours</div>
+          </div>
+
+          <div style="margin-bottom: 24px;">
+            <div style="font-size: 0.74rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-bottom: 8px;">Salon Locations</div>
+            <div style="font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary);">
+              &bull; <strong>New York</strong>: 740 Madison Ave, Floor 4<br>
+              &bull; <strong>Paris</strong>: 18 Place Vend&ocirc;me<br>
+              &bull; <strong>Geneva</strong>: 32 Rue du Rh&ocirc;ne<br>
+              &bull; <strong>London</strong>: 45 New Bond Street
+            </div>
+          </div>
+
+          <div class="summary-assurance-box">
+            <div class="assurance-item">
+              <span class="assurance-icon">🥂</span>
+              <div>
+                <strong>Private Salon Experience</strong>
+                <p>Enjoy private viewing salons with champagne service and certified gemological microscopes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="serif">KALLOL</h3>
+          <p>Handcrafted fine jewelry crafted for everyday elegance and milestone memories.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="news.html">News & Journal</a></li>
+            <li><a href="contact.html">Contact & Salons</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="index.html#specifications">Certifications & Specs</a></li>
+            <li><a href="contact.html">Complimentary Resizing</a></li>
+            <li><a href="contact.html">Insured Global Courier</a></li>
+            <li><a href="checkout.html">Shopping Checkout</a></li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter-box">
+          <h4>Private Atelier Circle</h4>
+          <p>Subscribe for exclusive preview invitations and novel releases.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 KALLOL Haute Joaillerie. All rights reserved.</div>
+        <div>New York &bull; Paris &bull; Geneva &bull; London</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
